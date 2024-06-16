@@ -1,0 +1,10 @@
+name: 'action-template'
+description: "Template extension to be used for actions."
+inputs:
+  token:
+    description: 'The token to use.'
+    require: false
+    default: ${{ github.token }}
+runs:
+  using: 'node20'
+  main: 'index.js'
